@@ -35,7 +35,7 @@ if (!is_null($events['events'])) {
 	}
 	else
 	{
-		$send=$text;
+		$send=$text.$replyToken;
 	}
 			
 			
