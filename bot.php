@@ -17,8 +17,10 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			if($text=='1'){
-			$send=0;
+			
+			 
+			if(strpos( $text, "เท่ห์" )){
+			$send='คนเก่งมากๆ';
 			}
 			$messages = ['type' => 'text','text' => $send];
 
