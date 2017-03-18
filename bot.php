@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			
 			 
-			if(strpos( $text, "เท่ห์" )){
+			if("เท่"==$text){
 			$send='คนเก่งมากๆ';
 			}
 			$messages = ['type' => 'text','text' => $send];
