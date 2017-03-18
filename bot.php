@@ -23,6 +23,22 @@ if (!is_null($events['events'])) {
 			}else{
 				$send=$text;
 			}
+				if($text=="ชื่อไร") {
+				$send="ไร้ชื่อไร้แซ่";
+			}else{
+				$send=$text;
+			}
+				if($text=="สบายดี") {
+				$send="ก็สบายดีอยู่";
+			}else{
+				$send=$text;
+			}
+				if($text=="หิวเปล่า") {
+				$send="เป็นบอทจะหิวไปทำไม";
+			}else{
+				$send=$text;
+			}
+			
 			
 			$messages = ['type' => 'text','text' => $send];
 
