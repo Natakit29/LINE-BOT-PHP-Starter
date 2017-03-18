@@ -18,8 +18,10 @@ if (!is_null($events['events'])) {
 
 			// Build message to reply back
 			
-			if(strpos($text, "ดี" )) {
+			if($text=="ดี") {
 				$send="สวัสดี";
+			}else{
+				$send=$text;
 			}
 			
 			$messages = ['type' => 'text','text' => $send];
