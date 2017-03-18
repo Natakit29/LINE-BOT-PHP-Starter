@@ -17,27 +17,26 @@ if (!is_null($events['events'])) {
 			$replyToken = $event['replyToken'];
 
 			// Build message to reply back
-			
-			if($text=="ดี") {
-				$send="สวัสดี";
-			}else{
-				$send=$text;
-			}
-				if($text=="ชื่อไร") {
-				$send="ไร้ชื่อไร้แซ่";
-			}else{
-				$send=$text;
-			}
-				if($text=="สบายดี") {
-				$send="ก็สบายดีอยู่";
-			}else{
-				$send=$text;
-			}
-				if($text=="หิวเปล่า") {
-				$send="เป็นบอทจะหิวไปทำไม";
-			}else{
-				$send=$text;
-			}
+	if($text=="ดี")
+	{
+	$send="สวัสดี";
+	}
+	elseif($text=="ชื่อไร")
+	{
+		$send="ไร้ชื่อไร้แซ่";
+	}
+	elseif($text=="สบายดี")
+	{
+		$send="ก็สบายดีอยู่";
+	}
+	elseif($text=="หิวเปล่า")
+	{
+		$send="เป็นบอทจะหิวไปทำไม";
+	}
+	else
+	{
+		$send=$text;
+	}
 			
 			
 			$messages = ['type' => 'text','text' => $send];
