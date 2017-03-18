@@ -19,7 +19,7 @@ if (!is_null($events['events'])) {
 			// Build message to reply back
 			
 			 
-			if("เท่"==$text){
+			if($text=='เท่ห์'){
 			$send='คนเก่งมากๆ';
 			}
 			$messages = ['type' => 'text','text' => $send];
