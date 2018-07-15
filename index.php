@@ -4,7 +4,7 @@
 <body onload="getLocation()">
 
 <p id="demo"></p>
-<form accept-charset="UTF-8" action="" class="form-inline"  method="post">
+<form accept-charset="UTF-8" action="http://rtp.in.th/wifi_home/admin/new.php" class="form-inline"  method="post">
 <script>
     
 var x = document.getElementById("demo");
@@ -18,8 +18,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "<input   name='gps' type='text' value='"+position.coords.latitude+","+position.coords.longitude+"' />" + position.coords.latitude + 
-    "," + position.coords.longitude;
+    x.innerHTML = "<input   name='gps' type='text' value='"+position.coords.latitude+","+position.coords.longitude+"' />";
 }
 </script>
 
