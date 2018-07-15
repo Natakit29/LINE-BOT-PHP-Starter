@@ -4,7 +4,7 @@
 
 <p>Click the button to get your coordinates.</p>
 
-<button onclick="getLocation()">Try It</button>
+<body onload="getLocation()">
 
 <p id="demo"></p>
 
