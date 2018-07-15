@@ -17,7 +17,7 @@ function getLocation() {
 }
 
 function showPosition(position) {
-    x.innerHTML = "" + position.coords.latitude + 
+    x.innerHTML = "<input   name='home_village_name' type='text' />" + position.coords.latitude + 
     "," + position.coords.longitude;
 }
 </script>
